@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+    <title>pochtarenko_web</title>
+</head>
+
+<body>
+	<a id="comeback"></a>
+<h1 id="task1">My first project</h1>
+<h2> Список гиперссылок: </h2>
+<ol>
+    <li><a href="http://example.com">Абсолютная гиперссылку на главную страницу сайта example.com </a></li>
+    <li><a href="https://example.com"> Абсолютная на главную сайта example.com в протоколе https </a></li>
+    <li><a href="ftp://google.com/fallout/file1.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
+    <li><a href="ftp://test:password@admin.ru/data/file2.txt"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+    <li><a href="taylor.html#lyrics" target="_blank">Ссылку на фрагмент страницы некоторого сайт</a></li>  
+    <li><a href="#“twice”">Ссылка на фрагмент текущей страницы </a></li>
+    <li><a href="https://www.onlinestore.ru?product=t-shitt&color=white" target="_blank"> Ссылка с двумя параметрами в URL</a></li>
+    <li><p>Список ссылок основной навигации сайта с подписями</p>
+        <nav>
+            <ul>
+                <li><a href="#task1" title="task">Задание №1</a></li>
+                <li><a href="#form" title="form">Форма</a></li>
+            </ul>
+        </nav>
+<br>
+    </li>
+    <li><a>Ссылка без href</a></li>
+    <li><a href="">Ссылка с пустым href</a></li>
+    <li><a href="http://example.com" rel = "nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="http://example.com" rel = "noindex">Запрещенная для индексации поисковиками</a></li>
+    <li><p>Здесь должен быть какой-то текст, но здесь ссылка на -> <a target="_blank" href="https://vk.com/feed"> VK </a>- это лучше одноклассников ;)</p></li>
+    <li><a href="https://youtu.be/_cjSafyjABs" target="_blank"><img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1613172326_92-p-zheltii-fon-gubka-bob-108.jpg" width="500" height="350" alt="twice"></a></li>
+    <li><a href="srr.html">Относительная ссылка</a></li>
+    <li><a href="about/about.html">Относительная ссылка на старницу в каталоге about</a></li>
+    <li><a href="../index.html">Относительная ссылка уровнем выше</a></li>
+    <li><a href="../../index.html">Относительная ссылка на 2 уровня выше</a></li>
+    <li><a href="/">Сокращенная ссылка на главную</a></li>
+    <li><a href="/srr.html">Сокращенная ссылка на внутреннюю</a></li>
+</ol>
+
+
+<h1 id="form">Форма</h1>
+<form action="/" method="POST">
+
+    <label>
+        Имя<br>
+        <input name="field-name-1" value="Имя">
+    </label><br>
+
+    <label>
+        email:<br>
+        <input name="field-email" value="test@gmail.com" type="email">
+    </label><br>
+
+    <label>
+        Дата рождения<br>
+        <input name="field-date" value="2008-01-22" type="date">
+    </label><br>
+
+    Пол:<br>
+    <label><input type="radio" checked="checked" name="radio-group-1" value="Мужчина">
+        Мужчина</label><br>
+    <label><input type="radio" name="radio-group-1" value="Женщина">
+        Женщина</label><br>
+    <label><input type="radio" name="radio-group-1" value="Еще не решил/а">
+        Еще не решил/а</label><br>
+
+        <div>
+            <p>Количество конечностей</p>
+            <div>
+                <input tabindex="4" checked type="radio" name="gender" value="male"> Одна
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female"> Две
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female"> Три
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female"> Четыре(норма)
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female"> Пять(что-то не так)
+            </div>
+
+
+    <label>
+       	Какой твой любимый цвет?
+        <br>
+        <select name="field-name-4[]" multiple="multiple">
+            <option value="color1" selected="selected">Красный</option>
+            <option value="color2">Желтый</option>
+            <option value="color3">Черный</option>
+            <option value="color4">Белый</option>
+            <option value="color5">Зеленый</option>
+        </select>
+    </label><br>
+
+    <label>
+        Что сегодня снилось?:
+        <br>
+        <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Распиши все в подробностях</textarea>
+    </label><br>
+
+    <label><input type="checkbox" checked="checked" name="check-1">
+        Я согласен(a)</label><br>
+
+    <input type="submit" value="send">
+</form>
+</body>
+</html>
